@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.1 on win32)" generated="2025-12-16T17:09:20.591072" rpa="false" schemaversion="5">
+<suite id="s1" name="Auto" source="C:\Users\ruanalmeida\Desktop\auto">
+<suite id="s1-s1" name="Tests" source="C:\Users\ruanalmeida\Desktop\auto\tests">
+<suite id="s1-s1-s1" name="CT01-login" source="C:\Users\ruanalmeida\Desktop\auto\tests\CT01-login.robot">
+<test id="s1-s1-s1-t1" name="CT-01 Demoblaze Login Com Usuario e Senha congruentes" line="7">
+<kw name="Abrir o Navegador" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:09:21.758812" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/#carouselExampleIndicators'.</msg>
+<arg>${Demo.URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-16T17:09:21.756481" elapsed="4.597004"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-16T17:09:26.354763" elapsed="0.048933"/>
+</kw>
+<status status="PASS" start="2025-12-16T17:09:21.754036" elapsed="4.650315"/>
+</kw>
+<kw name="Clicar no Botao de Login" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Demo.ButtonLogin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-16T17:09:26.408257" elapsed="0.096600"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:09:26.507393" level="INFO">Clicking element '//*[@id="login2"]'.</msg>
+<arg>${Demo.ButtonLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:09:26.505591" elapsed="0.246399"/>
+</kw>
+<status status="PASS" start="2025-12-16T17:09:26.405980" elapsed="0.346708"/>
+</kw>
+<kw name="Preenche o Username" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Demo.UsernameInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-16T17:09:26.757013" elapsed="0.303370"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:09:27.063906" level="INFO">Clicking element '//*[@id="loginusername"]'.</msg>
+<arg>${Demo.UsernameInput}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:09:27.061205" elapsed="0.215464"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:09:27.282195" level="INFO">Typing text 'Ruan Almeida' into text field '//*[@id="loginusername"]'.</msg>
+<arg>${Demo.UsernameInput}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:09:27.277958" elapsed="0.328752"/>
+</kw>
+<status status="PASS" start="2025-12-16T17:09:26.754440" elapsed="0.852798"/>
+</kw>
+<kw name="Preenche com a senha" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Demo.PasswordInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-16T17:09:27.610084" elapsed="0.046158"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:09:27.659166" level="INFO">Clicking element '//*[@id="loginpassword"]'.</msg>
+<arg>${Demo.PasswordInput}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:09:27.656769" elapsed="0.138550"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:09:27.798019" level="INFO">Typing text '24252425Ruan' into text field '//*[@id="loginpassword"]'.</msg>
+<arg>${Demo.PasswordInput}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:09:27.795942" elapsed="0.136806"/>
+</kw>
+<status status="PASS" start="2025-12-16T17:09:27.608483" elapsed="0.324683"/>
+</kw>
+<kw name="Clicar no botao de conclusao de login" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Demo.AcessLogin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-16T17:09:27.935554" elapsed="0.043304"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-16T17:09:27.981459" level="INFO">Clicking element '//*[@id="logInModal"]/div/div/div[3]/button[2]'.</msg>
+<arg>${Demo.AcessLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-16T17:09:27.979479" elapsed="0.124464"/>
+</kw>
+<status status="PASS" start="2025-12-16T17:09:27.934120" elapsed="0.170296"/>
+</kw>
+<kw name="Fecha o navegador" owner="keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-16T17:09:43.108693" level="INFO">Slept 15 seconds.</msg>
+<arg>15</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-16T17:09:28.106594" elapsed="15.003083"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-16T17:09:43.110472" elapsed="2.446902"/>
+</kw>
+<status status="PASS" start="2025-12-16T17:09:28.105344" elapsed="17.452358"/>
+</kw>
+<status status="PASS" start="2025-12-16T17:09:21.741487" elapsed="23.817035"/>
+</test>
+<status status="PASS" start="2025-12-16T17:09:20.761430" elapsed="24.808083"/>
+</suite>
+<status status="PASS" start="2025-12-16T17:09:20.742689" elapsed="24.840495"/>
+</suite>
+<status status="PASS" start="2025-12-16T17:09:20.619790" elapsed="24.987471"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Auto" id="s1" pass="1" fail="0" skip="0">Auto</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Auto.Tests</stat>
+<stat name="CT01-login" id="s1-s1-s1" pass="1" fail="0" skip="0">Auto.Tests.CT01-login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
